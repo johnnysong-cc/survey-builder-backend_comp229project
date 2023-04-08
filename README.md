@@ -30,9 +30,8 @@ Due to inactivity of the previous group members and disorganization, I've decide
 #### The Feature Branches
 
 - It is created from the `dev` branch for the developers to work in a new feature
-- It branches off from the `dev` branch, not the ~~`main`~~ branch
-- It must be merged back into the `dev` branch by a Pull Request: never use `git push`
-- It must be linked to a work item which clearly describes the features being developed
+- It branches off from the `dev` branch, not the ~~`main`~~ branch: `git switch -c <new_branch_name> <base_branch_name>`
+- It must be merged back into the `dev` branch by a Pull Request: use `git push -o origin <your_FE/BF-branch_name>`, NOT ~~`git push -o origin dev`~~⚠️
 - It must be deleted once the feature branch is merged back to the `dev` branch
 - Branch naming convention: `FE_<workItem>_BriefDescription`
 
