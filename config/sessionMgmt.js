@@ -1,3 +1,10 @@
+/** 
+ * Internal Documentation
+ * session configuration
+ * Student name: Johnny Zhiyang Song
+ * Student ID: 301167073
+ */
+
 const session=require('express-session');
 const mongoSessionStore=require('connect-mongo');
 const sessionConf = {
