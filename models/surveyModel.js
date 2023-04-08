@@ -1,6 +1,7 @@
 /**
  * Internal Documentation
- * Student name: Zhiyang Song
+ * mongoose models for Survey
+ * Student name: Johnny Zhiyang Song
  * Student ID: 301167073
  */
 

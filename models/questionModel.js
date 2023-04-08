@@ -1,7 +1,7 @@
 /** 
  * Internal Documentation
  * mongoose models for Question
- * Student name: Zhiyang Song
+ * Student name: Johnny Zhiyang Song
  * Student ID: 301167073
  */
 const mongoose = require('../config/dbConn');
