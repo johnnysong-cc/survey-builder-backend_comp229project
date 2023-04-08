@@ -1,3 +1,10 @@
+/** 
+ * Internal Documentation
+ * app running environment configuration
+ * Student name: Johnny Zhiyang Song
+ * Student ID: 301167073
+ */
+
 require("dotenv").config();
 const path = require('path');
 const express = require('express');

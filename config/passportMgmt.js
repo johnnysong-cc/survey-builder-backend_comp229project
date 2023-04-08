@@ -1,3 +1,10 @@
+/** 
+ * Internal Documentation
+ * passport strategy configuration
+ * Student name: Johnny Zhiyang Song
+ * Student ID: 301167073
+ */
+
 const bcrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 const JwtStrategy = require('passport-jwt').Strategy;

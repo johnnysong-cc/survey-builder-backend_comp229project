@@ -1,3 +1,10 @@
+/** 
+ * Internal Documentation
+ * MongoDB Atlas connection configuration
+ * Student name: Johnny Zhiyang Song
+ * Student ID: 301167073
+ */
+
 const mongoose=require('mongoose');
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.CONNSTRING);
