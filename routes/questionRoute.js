@@ -7,10 +7,14 @@
 const router = require('express').Router();
 const {createQuestion,viewMyQuestions,updateQuestion,deleteQuestion} = require('../controllers/questionsController');
 
+const multer = require('multer');
+const storage = multer.memoryStorage();
+const upload = multer({storage: storage});
+
 module.exports = (passport) => {
-  router.post('/create',passport.authenticate('jwt',{session:false}),createQuestion);
-  router.get('/my-questions',passport.authenticate('jwt',{session:false}),viewMyQuestions);
-  router.put('/:questionId',passport.authenticate('jwt',{session:false}),updateQuestion);
-  router.delete('/:questionId',passport.authenticate('jwt',{session:false}),deleteQuestion);
+  router.get('/my-questions',passport.authenticate('jwt',{session: false}),viewMyQuestions);
+  router.post('/createquestion',upload.none(),passport.authenticate('jwt',{session: false}),createQuestion);
+  router.put('/:questionId',upload.none(),passport.authenticate('jwt',{session: false}),updateQuestion);
+  router.delete('/:questionId',upload.none(),passport.authenticate('jwt',{session: false}),deleteQuestion);
   return router;
-}
+};

@@ -7,7 +7,7 @@ Due to inactivity of the previous group members and disorganization, I've decide
 ## Collaboration Rules
 
 ### NO.1 RULE: Leave the group if you are not willing to take initiative!
-### NO.2 RULE: Leave the group if you are not willing to contribute duly!
+### NO.2 RULE: Leave the group if you are not willing to match your workload with other members!
 ### NO.3 RULE: Leave the group if you are not willing to work hard and deliever results before deadlines!
 
 ### Branch Management
