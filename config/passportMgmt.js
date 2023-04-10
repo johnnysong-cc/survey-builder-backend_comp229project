@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
-const User = require('../models/userModel');
+const {User} = require('../models/userModel');
 module.exports = function(passport){
   passport.use(new LocalStrategy(
     async (username,password,done) => {
