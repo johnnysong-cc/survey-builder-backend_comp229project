@@ -1,0 +1,29 @@
+[
+  {
+    "survey1": {
+      "title": "testSurvey1",
+      "description": "medical common sense survey",
+      "questionIds": [1000,1002,1004,1006,1008,1010]
+    },
+    "useranswers":[2,2,3,0,0,0]
+  },
+  {
+    "title": "testSurvey2",
+    "description": "medical common sense survey",
+    "questionIds": [
+      1000,1002,1004,1006,1008,1010
+    ]
+  },
+  {
+    "title": "testSurvey3",
+    "description": "medical common sense survey",
+    "questionIds": [
+      1000,1001,1003,1005,1007,1010
+    ]
+  },
+  {
+    "startDate": "2023-01-01",
+    "endDate": "2023-03-30"
+  }
+]
+

@@ -1,21 +1,24 @@
 /** 
  * Internal Documentation
  * mongoose models for Question
- * Student name: Johnny Zhiyang Song
+ * Student name: Zhiyang Song
  * Student ID: 301167073
  */
+
 const mongoose = require('../config/dbConn');
 const {Schema} = mongoose;
+const {AutoIncrementID} = require('@typegoose/auto-increment');
 
 const QuestionSchema = new Schema({
-  questionText: {type: String,required: true},
+  _id: {type: Number},
+  questionText: {type: String,required: true,unique: [true,'The same question already exists.']},
   questionType: {type: String,required: true,enum: ['MCQ','TFQ']},
   createdBy: {type: Schema.Types.ObjectId,ref: 'User',required: true},
   createdAt: {type: Date,required: true,default: Date.now},
   choices: {
     type: [{
-      choiceText: {type: String,required: true},
-      correctAnswer: {type: Boolean,default: false,required: true},
+      choiceText: {type: String,required:true},
+      correctAnswer: {type: Boolean,default: false,required:true},
     }],
     validate: [
       {
@@ -53,7 +56,7 @@ const QuestionSchema = new Schema({
     type: Boolean,validate: [
       {
         validator: function(val) {
-          return this.questionType === 'TFQ' ? (this.choices.length === 0) : true;
+          return this.questionType === 'TFQ' ? (this.choices.length===0) : true;
         },
         message: "{PATH} validation failed: `isCorrect` must be present for a true/false question and there must not be choice for it."
       }
@@ -61,6 +64,8 @@ const QuestionSchema = new Schema({
     default: false
   },
 });
+
+QuestionSchema.plugin(AutoIncrementID,{startAt: 1000});
 module.exports = {
   Question: mongoose.model('Question',QuestionSchema)
 };
