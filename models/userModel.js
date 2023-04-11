@@ -1,4 +1,5 @@
-/** Internal Documentation
+/** 
+ * Internal Documentation
  * mongoose models for Users
  * Student name: Zhiyang Song
  * Student ID: 301167073

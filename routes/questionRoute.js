@@ -8,11 +8,9 @@
 const router = require('express').Router();
 const {createQuestion,viewMyQuestions,updateQuestion,deleteQuestion} = require('../controllers/questionsController');
 
-//#region Multer for form-data compatibility
 const multer = require('multer');
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
-//#endregion
 
 module.exports = (passport) => {
   router.get('/my-questions',passport.authenticate('jwt',{session:false}),viewMyQuestions);

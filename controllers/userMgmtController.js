@@ -48,27 +48,18 @@ module.exports = {
   },
   login: async (req,res) => {
     let {username,password} = req.body;
-    //#region Compatibility for form-data
     if(req.headers['content-type'].startsWith('multipart/form-data')){
       username = req.body.username;
       password = req.body.password;
     }
-    //#endregion
-    //#region Manual Authentication without JWT
-      //#region Check if the user exists
-      const existingUser = await User.findOne({username: username}).exec().catch((err) => {
-        return res.status(500).json({message: err.message});
-      });
-      if(!existingUser)
-        return res.status(401).json({message: 'User not found'});
-      //#endregion Check if the user exists
-      //#region Check if the password is correct
-      const isPasswordMatched = await bcrypt.compare(password,existingUser.password);
-      if(!isPasswordMatched)
-        return res.status(401).json({message: 'Incorrect password'});
-      //#endregion Check if the password is correct
-    //#endregion Manual Authentication without JWT
-    //#region JWT generation
+    const existingUser = await User.findOne({username: username}).exec().catch((err) => {
+      return res.status(500).json({message: err.message});
+    });
+    if(!existingUser)
+      return res.status(401).json({message: 'User not found'});
+    const isPasswordMatched = await bcrypt.compare(password,existingUser.password);
+    if(!isPasswordMatched)
+      return res.status(401).json({message: 'Incorrect password'});
     const payload = {
       id:existingUser.id,
     };
@@ -81,7 +72,6 @@ module.exports = {
       token: token,
       message: 'Logged in successfully',
     });
-    //#endregion JWT generation
   },
   updateProfile: async (req,res) => {
     console.log(req.user);
@@ -100,7 +90,6 @@ module.exports = {
         return res.status(401).json({message: 'Incorrect old password'});
       currentUser.password = await bcrypt.hash(newPassword,12);
     }
-    //#endregion
     await currentUser.save().catch(err => {
       if(err){
         if(err.name==='ValidationError'){
