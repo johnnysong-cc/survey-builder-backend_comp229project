@@ -1,12 +1,11 @@
-/**
- * Internal Documentation
- * mongoose models for User
- * Student name: Johnny Zhiyang Song
+/** Internal Documentation
+ * mongoose models for Users
+ * Student name: Zhiyang Song
  * Student ID: 301167073
  */
+
 const mongoose = require('../config/dbConn');
 const {Schema} = mongoose;
-
 const UserSchema = new Schema({
   isRegistered: {type: Boolean,required: true},
   email: {type: String,unique: [true,"This email has been registered."],
@@ -28,7 +27,8 @@ const UserSchema = new Schema({
     ]
   },
   username: {
-    type: String,unique: [true,"User name must be unique."],
+    type: String,
+    unique: [true,"User name must be unique."],
     validate: [
       {
         validator: function(val) {
@@ -39,30 +39,7 @@ const UserSchema = new Schema({
     ]
   },
   password: {
-    type: String,validate: [
-      {
-        validator: val => val.length >= 6 && val.length <= 20,
-        message: "{PATH} validation failed: the length of the password must be within 6 to 20."
-      },
-      {
-        validator: val => {
-          let hasUpper = false,hasLower = false,hasNumber = false;
-          val.split('').forEach(c => {
-            if (c >= 'A' && c <= 'Z') hasUpper = true;
-            if (c >= 'a' && c <= 'z') hasLower = true;
-            if (c >= '0' && c <= '9') hasNumber = true;
-          });
-          return hasUpper && hasLower && hasNumber;
-        },
-        message: "{PATH} validation failed: the password must contain at least an uppercase letter, a lowercase letter, and a number."
-      },
-      {
-        validator: function(val) {
-          return this.isRegistered ? val.length > 0 : true;
-        },
-        message: "{PATH} validation failed: the password must be present for a registered user."
-      }
-    ]
+    type: String,
   },
 });
 module.exports = {

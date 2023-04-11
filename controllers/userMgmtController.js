@@ -1,22 +1,28 @@
 /** 
  * Internal Documentation
- * user management APIs
+ * User APIs
  * Student name: Johnny Zhiyang Song
  * Student ID: 301167073
  */
 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const User = require('../models/userModel');
-
+const {User} = require('../models/userModel');
 module.exports = {
   register: async (req,res) => {
-    const {username,email,password} = req.body;
-    const hashedPassword = await bcrypt.hash(password,12);
+    let {username,email,password} = req.body;
+    if(req.headers['content-type'].startsWith('multipart/form-data')){
+      username = req.body.username;
+      email = req.body.email;
+      password = req.body.password;
+    }
+    if (!username || !email || !password)
+      return res.status(400).json({message: 'All the fields are required.'});
     try{
+      const hashedPassword = await bcrypt.hash(password,12);
       const existingUser = await User.findOne({$or: [{username: username},{email: email}]});
       if(existingUser)
-        res.status(400).json({message: 'User already exists or the email is already registered'});
+        return res.status(400).json({message: 'User already exists or the email is already registered'});
       const newUser = new User({
         username: username,
         email: email,
@@ -34,53 +40,68 @@ module.exports = {
           message:"Validation Error: "+message, 
           errors: err.message
         });
-      }else
+      } else {
+        console.log(err);
         return res.status(500).json({message: err.message});
+      }
     }
   },
   login: async (req,res) => {
-    const {username,password} = req.body;
-    User.findOne({username: username},async (err,user) => {
-      if(err)
-        return res.status(500).json({message: err.message});
-      if(!user)
-        return res.status(401).json({message: 'User not found'});
-      const isPasswordMatched = await bcrypt.compare(password,user.password);
-      if(!isPasswordMatched)
-        return res.status(401).json({message: 'Incorrect password'});
-      const payload = {
-        id:user.id,
-      };
-      const token = jwt.sign(
-        payload, 
-        process.env.JWT_SECRET, 
-        {expiresIn: process.env.JWT_EXPIRES_IN}
-      );
-      return res.status(200).json({
-        token: token,
-        message: 'Logged in successfully',
-      });
-    });
-  },
-  updateProfile: async (req,res) => {
-    const { id } = req.user;
-    const { username, email, oldPassword, newPassword } = req.body;
-    const user = await User.findById(id);
-    //#region update user profile
-    if(!user)
-      return res.status(404).json({message: 'User not found'});
-    if(username)
-      user.username = username;
-    if(email)
-      user.email = email;
-    if(oldPassword && newPassword){
-      const isPasswordMatched = await bcrypt.compare(oldPassword,user.password);
-      if(!isPasswordMatched)
-        return res.status(401).json({message: 'Incorrect old password'});
-      user.password = await bcrypt.hash(newPassword,12);
+    let {username,password} = req.body;
+    //#region Compatibility for form-data
+    if(req.headers['content-type'].startsWith('multipart/form-data')){
+      username = req.body.username;
+      password = req.body.password;
     }
     //#endregion
-    await user.save(err => {
+    //#region Manual Authentication without JWT
+      //#region Check if the user exists
+      const existingUser = await User.findOne({username: username}).exec().catch((err) => {
+        return res.status(500).json({message: err.message});
+      });
+      if(!existingUser)
+        return res.status(401).json({message: 'User not found'});
+      //#endregion Check if the user exists
+      //#region Check if the password is correct
+      const isPasswordMatched = await bcrypt.compare(password,existingUser.password);
+      if(!isPasswordMatched)
+        return res.status(401).json({message: 'Incorrect password'});
+      //#endregion Check if the password is correct
+    //#endregion Manual Authentication without JWT
+    //#region JWT generation
+    const payload = {
+      id:existingUser.id,
+    };
+    const token = jwt.sign(
+      payload, 
+      process.env.JWT_SECRET, 
+      {expiresIn: process.env.JWT_EXPIRES_IN}
+    );
+    return res.status(200).json({
+      token: token,
+      message: 'Logged in successfully',
+    });
+    //#endregion JWT generation
+  },
+  updateProfile: async (req,res) => {
+    console.log(req.user);
+    const { username, email, oldPassword, newPassword } = req.body;
+    const currentUser = await User.findById(req.user._id);
+    //#region update user profile
+    if(!currentUser)
+      return res.status(404).json({message: 'User not found'});
+    if(username)
+      currentUser.username = username;
+    if(email)
+      currentUser.email = email;
+    if(oldPassword && newPassword){
+      const isPasswordMatched = await bcrypt.compare(oldPassword,currentUser.password);
+      if(!isPasswordMatched)
+        return res.status(401).json({message: 'Incorrect old password'});
+      currentUser.password = await bcrypt.hash(newPassword,12);
+    }
+    //#endregion
+    await currentUser.save().catch(err => {
       if(err){
         if(err.name==='ValidationError'){
           let message = '';
@@ -98,5 +119,6 @@ module.exports = {
         return res.status(200).json({message: 'User profile updated successfully'});
       }
     });
+    return res.status(200).json({message: 'User profile updated successfully'});
   },
 }

@@ -31,5 +31,4 @@ app.use('/surveys',surveysRouter(passport));
 
 module.exports = {
   app,
-  // passport
 };
