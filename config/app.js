@@ -23,7 +23,7 @@ const corsConfig = {
 }
 
 const app = express();
-app.use(cors(corsConfig));
+app.use(cors());
 app.use(session);
 app.use(flash());
 app.use(passport.initialize());
