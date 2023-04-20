@@ -1,0 +1,501 @@
+[
+  {
+    "MCQ": {
+      "questionText": "Which of the following is the most abundant gas in the Earth's atmosphere?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Carbon dioxide",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Nitrogen",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Oxygen",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Hydrogen",
+          "correctAnswer": false
+        }
+      ]
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of white blood cell that is responsible for producing antibodies?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "B cell",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "T cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Red blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "a"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "What is the smallest blood vessel in the human body?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Artery",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Vein",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Capillary",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Venules",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a hormone produced by the pancreas that regulates blood sugar levels?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Insulin",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Glucagon",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Adrenaline",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Cortisol",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "a"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following blood types is considered the universal donor?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "A",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "B",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "AB",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "O",
+          "correctAnswer": true
+        }
+      ],
+      "correctAnswer": "d"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is the largest organ in the human body?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Brain",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Liver",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Heart",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Lungs",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "b"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "What is the process by which oxygen is transported through the bloodstream?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Respiration",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Osmosis",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Diffusion",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Active transport",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of cell that is responsible for blood clotting?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Red blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "White blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Stem cell",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "b"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "What is the protein found in red blood cells that carries oxygen?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Hemoglobin",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Insulin",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Glucagon",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Collagen",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "a"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of cell that is responsible for killing infected cells?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "T cell",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "B cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Red blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "a"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of immunity that is acquired through exposure to a pathogen or vaccine?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Innate immunity",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Active immunity",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Passive immunity",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "All of the above",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "b"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of white blood cell that is responsible for recognizing and destroying foreign invaders?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "B cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "T cell",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Red blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "b"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a protein that is produced by the immune system in response to an antigen?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Enzyme",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Hormone",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Antibody",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Lipid",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of cell that is responsible for producing red blood cells?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "T cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "B cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Red bone marrow cell",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of white blood cell that is responsible for engulfing and digesting foreign invaders?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "B cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "T cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Red blood cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Macrophage",
+          "correctAnswer": true
+        }
+      ],
+      "correctAnswer": "d"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is the process by which a person's blood is replaced with donated blood?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Dialysis",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Transfusion",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Hemodialysis",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Apheresis",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "b"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following blood types is considered the universal recipient?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "A",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "B",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "AB",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "O",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of white blood cell that is responsible for initiating an immune response?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "B cell",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "T cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Natural killer cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "a"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of immunity that is passed from mother to child through breast milk or the placenta?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "Innate immunity",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Active immunity",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Passive immunity",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "All of the above",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  },
+  {
+    "MCQ": {
+      "questionText": "Which of the following is a type of white blood cell that is responsible for preventing infections by attacking and killing bacteria?",
+      "questionType": "MCQ",
+      "choices": [
+        {
+          "choiceText": "B cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "T cell",
+          "correctAnswer": false
+        },
+        {
+          "choiceText": "Neutrophil",
+          "correctAnswer": true
+        },
+        {
+          "choiceText": "Platelet",
+          "correctAnswer": false
+        }
+      ],
+      "correctAnswer": "c"
+    }
+  }
+]

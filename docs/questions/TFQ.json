@@ -1,0 +1,282 @@
+[
+  {
+    "TFQ": {
+      "questionText": "The human heart has four chambers.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Vaccines can cause autism in children.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Blood type is determined by the presence or absence of certain antigens on the surface of red blood cells.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Antibiotics are effective against viral infections.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "All types of cancer are treatable if caught early enough.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The human body has 206 bones.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Allergies are caused by an overactive immune response.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The liver is responsible for filtering toxins from the blood.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Type 2 diabetes is caused by a lack of insulin in the body.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The human body can survive without water for up to a week.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Antibodies are proteins that are produced by the immune system in response to a pathogen.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Red blood cells are the only type of blood cell that can carry oxygen.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The human brain stops developing after adolescence.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Cancer is caused by a genetic mutation in cells.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The lymphatic system is responsible for transporting nutrients throughout the body.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "White blood cells are responsible for fighting off infections.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The human body is made up of 70% water.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The immune system can remember and recognize previously encountered pathogens.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The pancreas is responsible for producing and secreting digestive enzymes.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Antibiotics are only effective against bacterial infections.",
+      "questionType": "TFQ",
+      "isCorrect": true
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "People who are left-handed have a higher risk of developing mental illness.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Children who grow up in bilingual households have delayed language development compared to monolingual children.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Emotional intelligence is a fixed trait that cannot be developed over time.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Human beings are the only species capable of experiencing emotions.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Personality traits are mostly determined by genetics and cannot be changed.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The age at which children learn to walk is determined solely by genetic factors.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The concept of the \"self\" is universal across all cultures.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Attachment styles developed in childhood do not affect adult relationships.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The development of moral reasoning in children is universal across all cultures.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The idea of the \"midlife crisis\" is supported by scientific evidence.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "IQ tests are a reliable measure of intelligence across all cultures.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "People who are introverted are more likely to develop anxiety disorders.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Culture has no effect on the way people perceive and experience emotions.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "People who experience traumatic events will inevitably develop post-traumatic stress disorder (PTSD).",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The concept of mental illness is universal across all cultures.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Human beings are naturally inclined to be selfish and competitive.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "Gender roles are determined solely by biology and genetics.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "People who are bilingual are more prone to cognitive decline in old age.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The phenomenon of culture shock is experienced only by people who travel to foreign countries.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  },
+  {
+    "TFQ": {
+      "questionText": "The idea that people use only 10% of their brain is a scientific fact.",
+      "questionType": "TFQ",
+      "isCorrect": false
+    }
+  }
+]
