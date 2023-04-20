@@ -16,8 +16,14 @@ require('./passportMgmt')(passport);
 const surveysRouter = require('../routes/surveyRoute');
 const usersRouter = require('../routes/usersRoute');
 const questionRouter = require('../routes/questionRoute');
+const cors = require('cors');
+const corsConfig = {
+  origin: process.env.CLIENT_URL,
+  credentials: true,
+}
 
 const app = express();
+app.use(cors(corsConfig));
 app.use(session);
 app.use(flash());
 app.use(passport.initialize());
